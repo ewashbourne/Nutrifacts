@@ -6,7 +6,7 @@ describe 'static pages' do |variable|
 	describe 'home page' do 
 		before { visit root_path }
 
-		it { should have_title('Home | Nutrition App') }
+		it { should have_title('Nutrition App') }
 		it { should have_selector('h1', text: 'Home') }
 	end
 
