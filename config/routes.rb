@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   
   get '/signup',      to: 'users#new'
   get '/signin',      to: 'sessions#new'
+  get '/search',      to: 'food_facts#index'
   delete '/signout',  to: 'sessions#destroy'
   # resources :users
   # The priority is based upon order of creation: first created -> highest priority.

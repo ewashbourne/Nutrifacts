@@ -229,3 +229,19 @@ input {
 .log-in {
   text-align: left;
 }
+
+table, th, td {
+    border: 1px solid #A9A9A9;
+    border-collapse: collapse;
+    margin-left: 5px;
+    color: black;
+    background-color: white;
+}
+
+th, td {
+  padding: 5px;
+}
+
+.food-search {
+  color: black;
+}
