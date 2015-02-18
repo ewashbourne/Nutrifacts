@@ -225,3 +225,7 @@ input {
     color: $state-danger-text;
   }
 }
+
+.log-in {
+  text-align: left;
+}
