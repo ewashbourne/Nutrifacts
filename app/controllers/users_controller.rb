@@ -2,7 +2,7 @@ class UsersController < ApplicationController
   before_action :signed_in_user, only: [:edit, :update, :destroy]
   before_action :correct_user, only: [:edit, :update, :destroy]
   before_action :redirect_if_signed_in, only: [:new, :create]
-  before_action :admin_user,   only: [:destroy]
+ 
 
 	
   def new

@@ -1,6 +1,6 @@
 class FoodFactsController < ApplicationController
 
-	def index
+	def search
     @food = FoodFact.search(params[:food])
 	end
 
