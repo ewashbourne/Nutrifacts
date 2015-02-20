@@ -1,46 +1,19 @@
-<body>	
-	<div class="site-wrapper">
-		<div class="site-wrapper-inner">
-			<div class="cover-container">
-				<%= render 'layouts/header' %>
-					<div class="inner">
-						
-						<h1>Search</h1>
-						<div class="col-md-6 food-search">
-							<%= form_tag search_path, :method => 'get' do %>
-							<%= text_field_tag :food, params[:food] %>
-							<%= submit_tag "Search", :name => nil %>
-						<% end %>
-						<div>
-
-					<% @food.each do |f| %>		
-						<table>
-							<tr class="s">
-								<th>Food Item:</th>
-								<td><%= f['item_name'] %></td>		
-							</tr>
-							<tr>
-								<th>Brand:</th>
-								<td><%= f['brand_name'] %></td>
-							</tr>
-							<tr class="s">
-								<th>Serving Size:</th>
-								<td><%= f['nf_serving_size_qty'] %> </td>
-							</tr>
-							<tr>
-								<th>Calories:</th>
-								<td><%= f['nf_calories'] %></td>
-							</tr>
-							<tr class="s">
-								<th>Fat:</th>
-								<td><%= f['nf_total_fat'] %>g</td>
-							</tr>
-						</table>
-						<% end %>
-				
-						<div>
-					</div>
+<div class="site-wrapper">
+	<div class="site-wrapper-inner">
+		<div class="cover-container">
+			<div class="inner">
+				<h1>Search</h1>
+				<div class="col-md-6 food-search">
+					<%= form_tag search_path, :method => 'get' do %>
+						<%= text_field_tag :food, params[:food] %>
+						<%= submit_tag "Search", :name => nil %>
+					<% end %>
 				</div>
+			
+				<% @foods.each do |food| %>
+					<%= render 'food_facts/result', food: food %>
+				<% end %>
 			</div>
+		</div>
 	</div>
-</body>	
+</div>

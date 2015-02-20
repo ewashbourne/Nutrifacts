@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   resources :users,    except: [:new]
   resources :sessions, only:   [:create]
+  resources :food_facts, only: [:create] 
   get '/about',       to: 'static_pages#about'
   
   get '/signup',      to: 'users#new'

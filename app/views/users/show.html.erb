@@ -1,15 +1,19 @@
-<body>	
-	<div class="site-wrapper">
-		<div class="site-wrapper-inner">
-			<div class="cover-container">
-				<%= render 'layouts/header' %>
-					<div class="inner">
-						
-							<%= @user.name %>, <%= @user.email %>
-						
-					</div>
+
+	
+				<div class="inner">
+					<%= @user.name %>, <%= @user.email %>
+
+					<ul>
+						<% @user.food_facts.each do |fact| %>
+							<li><%= fact.item_name %></li>
+							<li><%= fact.brand_name %></li>
+							<li><%= fact.serving_size %></li>
+							<li><%= fact.nf_calories %></li>
+							<li><%= fact.nf_total_fat %></li>
+							<li>----------------------</li>
+						<% end %>
+					</ul>
+			
 				</div>
-			</div>
-	</div>
-</body>	
+		
 

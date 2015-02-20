@@ -1,8 +1,6 @@
 <% provide(:title, 'About') %>
-	<div class="site-wrapper">
-		<div class="site-wrapper-inner">
-			<div class="cover-container">
-				<%= render 'layouts/header' %>
+
+			
 					<div class="inner">
 							
 						<h1>Sign Up</h1>
@@ -17,7 +15,7 @@
 								<%= f.label :email %>
 								<%= f.email_field :email, class: 'form-control' %>
 
-								<%= f.label :password %>
+								<%= f.label :password %>		
 								<%= f.password_field :password, class: 'form-control' %>
 
 								<%= f.label :password_confirmation, "Confirm Password" %>
@@ -27,8 +25,5 @@
 							<% end %>
 							</div>
 						</div>
-
 					</div>
-				</div>
-			</div>
-	</div>
+	

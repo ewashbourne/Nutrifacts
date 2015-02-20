@@ -1,0 +1,30 @@
+<table class="table table-hover">
+  <tr class="s"><!-- Clean up this class name -->
+    <th>Food Item:</th>
+    <td><%= food['item_name'] %></td>   
+  </tr>
+  <tr>
+    <th>Brand:</th>
+    <td><%= food['brand_name'] %></td>
+  </tr>
+  <tr class="s">
+    <th>Serving Size:</th>
+    <td><%= food['serving_size'] %> </td>
+  </tr>
+  <tr>
+    <th>Calories:</th>
+    <td><%= food['nf_calories'] %></td>
+  </tr>
+  <tr class="s">
+    <th>Fat:</th>
+    <td><%= food['nf_total_fat'] %>g</td> 
+  </tr>
+</table>
+<%= form_for :food_fact, url: food_facts_path do |f| %>
+  <%= f.hidden_field :brand_name,     value: food['brand_name'] %>
+  <%= f.hidden_field :item_name,      value: food['item_name'] %>
+  <%= f.hidden_field :serving_size,   value: food['serving_size'] %>
+  <%= f.hidden_field :nf_calories,    value: food['nf_calories'] %>
+  <%= f.hidden_field :nf_total_fat,   value: food['nf_total_fat'] %>
+  <%= f.submit 'Save' %>
+<% end %>
