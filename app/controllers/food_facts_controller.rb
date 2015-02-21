@@ -15,10 +15,18 @@ class FoodFactsController < ApplicationController
     end
   end
 
+  def destroy
+    puts "DESTROY: params = #{params}"
+    food_fact = FoodFact.find(params[:id])
+    name_of_deleted_fact = food_fact.item_name
+    food_fact.destroy
+    flash[:success] = "You deleted the #{name_of_deleted_fact}."
+    redirect_to index_path
+  end
+
   private
 
-    def food_fact_params
-      params.require(:food_fact).permit(:brand_name, :item_name, :serving_size, :nf_calories, :nf_total_fat)
-    end
-
+  def food_fact_params
+    params.require(:food_fact).permit(:brand_name, :item_name, :nf_serving_size_qty, :nf_calories, :nf_total_fat)
+  end
 end

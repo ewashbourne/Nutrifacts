@@ -7,10 +7,12 @@ Rails.application.routes.draw do
   resources :food_facts, only: [:create] 
   get '/about',       to: 'static_pages#about'
   
-  get '/signup',      to: 'users#new'
-  get '/signin',      to: 'sessions#new'
-  get '/search',      to: 'food_facts#search'
-  delete '/signout',  to: 'sessions#destroy'
+  get '/signup',        to: 'users#new'
+  get '/signin',        to: 'sessions#new'
+  get '/search',        to: 'food_facts#search'
+  get '/index',         to: 'food_facts#index'
+  delete '/food_facts', to: 'food_facts#destroy'
+  delete '/signout',    to: 'sessions#destroy'
   # resources :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
