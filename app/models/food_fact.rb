@@ -2,6 +2,9 @@ class FoodFact < ActiveRecord::Base
 
   belongs_to :user
 
+  validates :item_name, presence: true, length: { minimum: 3, maximum: 254 }
+  validates :brand_name, presence: true
+
   def self.search(food)
     food ||= " "
     food.gsub!(" ", "%20")
