@@ -1,11 +1,27 @@
-  <ul>
-    <% current_user.food_facts.each do |fact| %>
-      <li><%= fact.item_name %></li>
-      <li><%= fact.brand_name %></li>
-      <li><%= fact.serving_size %></li>
-      <li><%= fact.nf_calories %></li>
-      <li><%= fact.nf_total_fat %></li>
-      <li>----------------------</li>
-      <%= link_to "Delete", food_facts_path(id: fact.id), method: :delete, data: { confirm: 'Are you sure?' } %>
-    <% end %>
-  </ul>
+
+<% current_user.food_facts.each do |fact| %>
+<table class="table table-hover">
+  <tr class="s">
+    <th>Food Item:</th>
+    <td><%= fact.item_name %></td>
+  </tr>
+  <tr>
+    <th>Brand:</th>
+    <td><%= fact.brand_name %></td>
+  </tr>
+  <tr>
+    <th>Serving Size:</th>
+    <td>qty <%= fact.nf_serving_size_qty %></td>
+  </tr>
+  </tr>
+    <th>Calories:</th>
+    <td><%= fact.nf_calories %></td>
+  </tr>
+  <tr>
+    <th>Total Fat:</th>
+    <td><%= fact.nf_total_fat %> g</td>
+  </tr>
+ </table>
+  <%= link_to "Delete", food_facts_path(id: fact.id), method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+ 
