@@ -3,9 +3,7 @@
   -webkit-box-sizing: border-box;
   box-sizing:         border-box;
 }
-.
-.
-.
+
 /* miscellaneous */
 
 .debug_dump {
@@ -208,9 +206,7 @@ input {
 }
 
 /* forms */
-.
-.
-.
+
 #error_explanation {
   color: red;
   ul {
@@ -222,7 +218,7 @@ input {
 .field_with_errors {
   @extend .has-error;
   .form-control {
-    color: $state-danger-text;
+    color: white;
   }
 }
 
