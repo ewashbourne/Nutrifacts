@@ -1,5 +1,6 @@
 
 <div class="inner">
+<div class="row search-row">		
 	<h1>Search</h1>
 	<div class="col-md-6 food-search">
 		<%= form_tag search_path, :method => 'get' do %>
@@ -12,4 +13,4 @@
 		<%= render 'food_facts/result', food: food %>
 	<% end %>
 </div>
-	
+</div>
