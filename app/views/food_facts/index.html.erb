@@ -5,9 +5,11 @@
         
         <h1>Saved Food Facts</h1>
 
+        <div class="col-lg-3"></div>
+        <div class="col-md-6 col-offset-3">
         <% current_user.food_facts.each do |fact| %>
-        <table class="table table-hover col-md-6 col-offset-3">
-          <tr class="s">
+        <table class="table table-hover">
+          <tr class>
             <th>Food Item:</th>
             <td><%= fact.item_name %></td>
           </tr>
@@ -30,8 +32,10 @@
          </table>
           <%= link_to "Delete", food_facts_path(id: fact.id), method: :delete, data: { confirm: 'Are you sure?' } %>
         <% end %>
-      
         </div>
+      </div>
+
+      </div>
       </div>
     </div>
   </div>
