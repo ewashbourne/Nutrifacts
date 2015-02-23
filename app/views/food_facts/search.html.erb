@@ -6,7 +6,6 @@
 				<h1>Search</h1>
 				<div class="col-lg-3"></div>
 				<div class="col-md-6 col-offset-3 food-search">
-					
 					<%= form_tag search_path, method: 'get' do %>
 						<%= text_field_tag :food, params[:food] %>
 						<%= submit_tag "Submit Search", :name => nil %>
@@ -24,15 +23,3 @@
 		</div>
 	</div>
 </div>
-
-<!-- 
-  <div class="col-lg-6">
-    <div class="input-group">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
-      </span>
-
-      <input type="text" class="form-control" placeholder="Search for...">
-    	
-    </div>
- -->
