@@ -6,7 +6,7 @@ Nutrifacts is a web application that allows users to search for nutritional info
 
 The Nutrifacts search functionality utilizes the Nutritionix API, which accesses data from restaurants, packaged foods, and common foods. Users can receive nutritional information based on those parameters and save the results to their accounts.
 
-This is my first Ruby on Rails project as a student of General Assembly's Web Develpment Immersive program. 
+This is my first Ruby on Rails project as a student of General Assembly's Web Development Immersive program. 
 
 ##Technologies
 * Rails 4.2.0
