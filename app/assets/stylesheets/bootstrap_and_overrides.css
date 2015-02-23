@@ -30,7 +30,7 @@ h6 {
 }
 
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
@@ -86,14 +86,47 @@ h6 {
   text-align: left;
 }
 
+.row-color {
+  background-color: #C8C8C8;
+}
+
+.delete-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.delete-button a:hover {
+  color: #404040;
+}
+
+.delete-button {
+  margin-top: -15px;
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.save-button {
+  text-align: right;
+  margin-top: -12px;
+  margin-bottom: 15px;
+  color: #404040;
+}
+
+.lead {
+  color: #787878;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
 
 /* forms */
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
- /* width: 100%;*/
   margin-bottom: 10px;
- /* @include box_sizing;*/
 }
 
 input {
@@ -107,30 +140,6 @@ input {
 
 .sign-up {
   text-align: left;
-}
-
-@media(max-width:767px) {
-    .intro-message {
-        padding-bottom: 15%;
-    }
-
-    .intro-message > h1 {
-        font-size: 3em;
-    }
-
-    ul.intro-social-buttons > li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-
-    ul.intro-social-buttons > li:last-child {
-        margin-bottom: 0;
-    }
-
-    .intro-divider {
-        width: 100%;
-    }
 }
 
 .content-section-a {
@@ -162,19 +171,22 @@ footer a:hover {
   margin-top: 10px;
 }
 
+
+.food-search {
+  color: black;
+}
+
+.search-row {
+  margin-top: 30px;
+}
+
+.saved-food-facts {
+  margin-top: 10px;
+}
+
 /* forms */
 
-/*#error_explanation {
-  color: white;
-ul {
-    color: black;
-    margin: 0 0 30px 0;
-  }
-}*/
-
 .field_with_errors {
-/*  @extend .has-error;
-  .form-control {*/
     color: white;
   }
 
@@ -193,12 +205,4 @@ table, th, td {
 
 th, td {
   padding: 5px;
-}
-
-.food-search {
-  color: black;
-}
-
-.search-row {
-  margin-top: 30px;
 }
