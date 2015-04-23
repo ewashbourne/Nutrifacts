@@ -8,9 +8,12 @@
 				<div class="col-md-5 col-md-offset-3 food-search">
 					<%= form_tag search_path, method: 'get' do %>
 						<%= text_field_tag :food, params[:food], class: 'form-control' %>
-						<%= button_tag('Search', class: 'btn btn-primary') %>
+				</div>
+				<div class="col-md-1 food-search-button">
+						<%= button_tag('Search', class: 'btn btn-primary search-button') %>
 					<% end %>
 				</div>
+				
 				
 				<div class="col-lg-12"></div>
 			<!-- 	<div class="col-md-6 col-offset-3	search-results"> -->
@@ -18,7 +21,7 @@
 						<%= render 'food_facts/result', food: food %>
 					<% end %>
 			<!-- 	</div> -->
-	
+				</div>
 			</div>		
 		</div>
 	</div>

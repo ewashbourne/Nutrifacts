@@ -17,7 +17,7 @@
 
 $(document).ready(function() {
   $(".intro-message").hide();
-  $(".intro-message").fadeIn(2000);
+  $(".intro-message").fadeIn(1000);
 });
 
 $(document).ready(function() {
@@ -31,5 +31,12 @@ $(document).ready(function() {
 });
 
 // $(document).ready(function() {
-//   $(".food-results").hide();
+//   $(".search-results").hide();
+// });
+
+// $(document).ready(function() {
+//   $(".search-results").hide();
+//   $(".search-button").click(function() {
+//     $(".search-results").fadeIn(200);
+//   })
 // });
