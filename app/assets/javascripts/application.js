@@ -14,3 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function() {
+  $(".intro-header").hide();
+  $(".intro-header").fadeIn(2000);
+});
+
+// $(".intro-header").fadeIn(800);
