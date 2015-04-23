@@ -16,8 +16,20 @@
 //= require_tree .
 
 $(document).ready(function() {
-  $(".intro-header").hide();
-  $(".intro-header").fadeIn(2000);
+  $(".intro-message").hide();
+  $(".intro-message").fadeIn(2000);
 });
 
-// $(".intro-header").fadeIn(800);
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $('nav').addClass('shrink');
+    } else {
+      $('nav').removeClass('shrink');
+    }
+  });
+});
+
+// $(document).ready(function() {
+//   $(".food-results").hide();
+// });

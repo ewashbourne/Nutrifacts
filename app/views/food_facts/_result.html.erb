@@ -1,35 +1,40 @@
-<table class="table table-hover">
-  <tr>
-    <th class="row-color">Food Item:</th>
-    <td class="row-color"><%= food['item_name'] %></td>   
-  </tr>
-  <tr>
-    <th>Brand:</th>
-    <td><%= food['brand_name'] %></td>
-  </tr>
-  <tr>
-    <th class="row-color">Serving Size:</th>
-    <td class="row-color">qty <%= food['nf_serving_size_qty'] %> </td>
-  </tr>
-  <tr>
-    <th>Calories:</th>
-    <td><%= food['nf_calories'] %></td>
-  </tr>
-  <tr>
-    <th class="row-color">Total Fat:</th>
-    <td class="row-color"><%= food['nf_total_fat'] %> g</td> 
-  </tr>
-</table>
+<div class="search-results col-md-offset-1">
+  <div class="col-md-5">
+    <table class="table table-hover food-results">
+    <tr>
+      <th class="row-color">Food Item:</th>
+      <td class="row-color"><%= food['item_name'] %></td>   
+    </tr>
+    <tr>
+      <th>Brand:</th>
+      <td><%= food['brand_name'] %></td>
+    </tr>
+    <tr>
+      <th class="row-color">Serving Size:</th>
+      <td class="row-color">qty <%= food['nf_serving_size_qty'] %> </td>
+    </tr>
+    <tr>
+      <th>Calories:</th>
+      <td><%= food['nf_calories'] %></td>
+    </tr>
+    <tr>
+      <th class="row-color">Total Fat:</th>
+      <td class="row-color"><%= food['nf_total_fat'] %> g</td> 
+    </tr>
+    </table>
 
-<%= form_for :food_fact, url: food_facts_path do |f| %>
-  <%= f.hidden_field :brand_name,     value: food['brand_name'] %>
-  <%= f.hidden_field :item_name,      value: food['item_name'] %>
-  <%= f.hidden_field :nf_serving_size_qty,   value: food['nf_serving_size_qty'] %>
-  <%= f.hidden_field :nf_calories,    value: food['nf_calories'] %>
-  <%= f.hidden_field :nf_total_fat,   value: food['nf_total_fat'] %>
-  <div class="save-button">
-    <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
-    <i class="icon-ok icon-white"></i> Save
-    <% end %>   
+    <%= form_for :food_fact, url: food_facts_path do |f| %>
+    <%= f.hidden_field :brand_name,     value: food['brand_name'] %>
+    <%= f.hidden_field :item_name,      value: food['item_name'] %>
+    <%= f.hidden_field :nf_serving_size_qty,   value: food['nf_serving_size_qty'] %>
+    <%= f.hidden_field :nf_calories,    value: food['nf_calories'] %>
+    <%= f.hidden_field :nf_total_fat,   value: food['nf_total_fat'] %>
+    <div class="save-button">
+      <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
+      <i class="icon-ok icon-white"></i> Save
+      <% end %>   
+    </div>
+    <% end %>
   </div>
-<% end %>
+</div>
+

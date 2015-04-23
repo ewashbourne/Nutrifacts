@@ -20,8 +20,43 @@ h6 {
     font-weight: 700;
 }
 
-.topnav {
-    font-size: 14px; 
+.navbar {
+  background-color: white;
+}
+
+nav a {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  font-size: 18px;
+  transition: all 0.4s ease;  
+}
+
+nav .navbar-toggle {
+  margin: 13px 15px 13px 0;
+}
+
+.navbar-brand {
+  font-size: 22px;
+}
+
+
+nav.navbar.shrink {
+  min-height: 35px;
+}
+
+nav.shrink a {
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  font-size: 15px;
+}
+
+nav.shrink .navbar-brand {
+  font-size: 15px;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 15px 8px 0;
 }
 
 .lead {
@@ -167,13 +202,13 @@ footer a:hover {
 }
 
 .search-results {
-  margin-left: 270px;
-  margin-top: 10px;
+  margin-right: -25px;
 }
 
 
 .food-search {
   color: black;
+  margin-bottom: 25px;
 }
 
 .search-row {
@@ -206,3 +241,4 @@ table, th, td {
 th, td {
   padding: 5px;
 }
+
