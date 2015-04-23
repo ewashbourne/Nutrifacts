@@ -208,7 +208,12 @@ footer a:hover {
 
 .food-search {
   color: black;
-  margin-bottom: 25px;
+  margin-bottom: 25px;  
+}
+
+.food-search-button {
+  margin-left: -20px;
+  margin-top: 1.1px;
 }
 
 .search-row {
