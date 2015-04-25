@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150221161829) do
+ActiveRecord::Schema.define(version: 20150425175558) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -28,6 +28,17 @@ ActiveRecord::Schema.define(version: 20150221161829) do
     t.integer  "user_id"
     t.integer  "serving_size"
     t.integer  "nf_serving_size_qty"
+    t.decimal  "nf_sugars"
+    t.decimal  "nf_sodium"
+    t.decimal  "nf_cholesterol"
+    t.decimal  "nf_protein"
+    t.decimal  "nf_saturated_fat"
+    t.decimal  "nf_dietary_fiber"
+    t.integer  "nf_vitamin_a_dv"
+    t.integer  "nf_vitamin_c_dv"
+    t.integer  "nf_calcium_dv"
+    t.integer  "nf_iron_dv"
+    t.decimal  "nf_potassium"
   end
 
   create_table "users", force: :cascade do |t|
