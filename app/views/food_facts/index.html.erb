@@ -3,8 +3,9 @@
     <div class="row">
       <div class="search-page">
         
-        <h1>Saved Food Facts</h1>
-        <div class="col-md-5">
+        <h1>Saved Nutrition Facts</h1>
+        <div class="row food-fact-panel">
+          <div class="col-md-7 col-md-offset-2">
           <% current_user.food_facts.each do |fact| %>
           <table class="table table-hover saved-food-facts">
             <tr>
@@ -32,6 +33,7 @@
             <%= link_to "Delete", food_facts_path(id: fact.id), method: :delete, data: { confirm: 'Are you sure?' } %>
           </div>
           <% end %>
+          </div>
         </div>
 
       </div>

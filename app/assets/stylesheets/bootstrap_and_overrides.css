@@ -20,6 +20,8 @@ h6 {
     font-weight: 700;
 }
 
+/* Navbar */
+
 .navbar {
   background-color: white;
 }
@@ -59,10 +61,7 @@ nav.shrink .navbar-toggle {
   margin: 8px 15px 8px 0;
 }
 
-.lead {
-    font-size: 18px;
-    font-weight: 400;
-}
+/* Home Page */
 
 .intro-header {
     padding-top: 50px;
@@ -76,29 +75,6 @@ nav.shrink .navbar-toggle {
     position: relative;
     padding-top: 20%;
     padding-bottom: 20%;
-}
-
-.search-page {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    margin-top: 50px;
-}
-
-.sign-in-page {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    margin-top: 100px;
-}
-
-.sign-in-page a {
-  color: white;
-  text-decoration: none;
-}
-
-.sign-in-page a:hover {
-  color: #404040;
 }
 
 .intro-message > h1 {
@@ -115,6 +91,36 @@ nav.shrink .navbar-toggle {
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.search-page {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    margin-top: 50px;
+}
+
+/* Sign In Page */
+
+.sign-in-page {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    margin-top: 100px;
+}
+
+.sign-in-page a {
+  color: white;
+  text-decoration: none;
+}
+
+.sign-in-page a:hover {
+  color: #404040;
 }
 
 .edit-profile {
@@ -247,3 +253,7 @@ th, td {
   padding: 5px;
 }
 
+.food-fact-panel {
+  margin-right: -35px;
+  margin-left: 25px;
+}
