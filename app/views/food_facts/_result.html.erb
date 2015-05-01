@@ -21,7 +21,52 @@
       <th class="row-color">Total Fat:</th>
       <td class="row-color"><%= food['nf_total_fat'] %> g</td> 
     </tr>
+    <tr>
+      <th>Sugar:</th>
+      <td><%= food['nf_sugars'] %> g</td> 
+    </tr>
+     <tr>
+      <th class="row-color">Sodium:</th>
+      <td class="row-color"><%= food['nf_sodium'] %> mg</td> 
+    </tr>
+     <tr>
+      <th>Cholesterol:</th>
+      <td><%= food['nf_cholesterol'] %> mg</td> 
+    </tr>
+     <tr>
+      <th class="row-color">Protein:</th>
+      <td class="row-color"><%= food['nf_protein'] %> g</td> 
+    </tr>
+     <tr>
+      <th>Saturated Fat:</th>
+      <td><%= food['nf_saturated_fat'] %> g</td> 
+    </tr>
+     <tr>
+      <th class="row-color">Fiber:</th>
+      <td class="row-color"><%= food['nf_dietary_fiber'] %> g</td> 
+    </tr>
+     <tr>
+      <th>Vitamin A:</th>
+      <td><%= food['nf_vitamin_a_dv'] %>%</td> 
+    </tr>
+     <tr>
+      <th class="row-color">Vitamin C:</th>
+      <td class="row-color"><%= food['nf_vitamin_c_dv'] %>%</td> 
+    </tr>
+     <tr>
+      <th>Calcium:</th>
+      <td><%= food['nf_calcium_dv'] %>%</td> 
+    </tr>
+     <tr>
+      <th class="row-color">Iron:</th>
+      <td class="row-color"><%= food['nf_iron_dv'] %>%</td> 
+    </tr>
+     <tr>
+      <th>Potassium:</th>
+      <td><%= food['nf_potassium'] %> g</td> 
+    </tr>
     </table>
+    
 
     <%= form_for :food_fact, url: food_facts_path do |f| %>
     <%= f.hidden_field :brand_name,     value: food['brand_name'] %>
@@ -29,6 +74,17 @@
     <%= f.hidden_field :nf_serving_size_qty,   value: food['nf_serving_size_qty'] %>
     <%= f.hidden_field :nf_calories,    value: food['nf_calories'] %>
     <%= f.hidden_field :nf_total_fat,   value: food['nf_total_fat'] %>
+    <%= f.hidden_field :nf_sugars,   value: food['nf_sugars'] %>
+    <%= f.hidden_field :nf_sodium,   value: food['nf_sodium'] %>
+    <%= f.hidden_field :nf_cholesterol,   value: food['nf_cholesterol'] %>
+    <%= f.hidden_field :nf_protein,   value: food['nf_protein'] %>
+    <%= f.hidden_field :nf_saturated_fat,   value: food['nf_saturated_fat'] %>
+    <%= f.hidden_field :nf_dietary_fiber,   value: food['nf_dietary_fiber'] %>
+    <%= f.hidden_field :nf_vitamin_a_dv,   value: food['nf_vitamin_a_dv'] %>
+    <%= f.hidden_field :nf_vitamin_c_dv,   value: food['nf_vitamin_c_dv'] %>
+    <%= f.hidden_field :nf_calcium_dv,   value: food['nf_calcium_dv'] %>
+    <%= f.hidden_field :nf_iron_dv,   value: food['nf_iron_dv'] %>
+    <%= f.hidden_field :nf_potassium,   value: food['nf_potassium'] %>
     <div class="save-button">
       <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
       <i class="icon-ok icon-white"></i> Save

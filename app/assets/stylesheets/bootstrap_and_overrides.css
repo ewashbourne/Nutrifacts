@@ -77,10 +77,26 @@ nav.shrink .navbar-toggle {
     padding-bottom: 20%;
 }
 
-.intro-message > h1 {
+.intro-message-1 {
+  border: 1px solid white;
+  margin-top: 200px;
+  margin-bottom: 175px;
+  padding-bottom: 25px;
+  padding-top: 20px;
+  width: 700px;
+  margin-right: -60px;
+  margin-left: 230px;
+}
+
+.sign-up-btn {
+  background-color: #f8f8f8;
+  border: none;
+}
+
+.intro-message-1 > h1 {
     margin: 0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
+    font-size: 7em;
 }
 
 .intro-divider {
@@ -89,8 +105,20 @@ nav.shrink .navbar-toggle {
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.intro-message > h3 {
+.intro-message-1 > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.content-section-a {
+  height: 475px;
+}
+
+.service-section {
+  margin-top: 45px;
+}
+
+.service-s {
+  margin-top: 45px;
 }
 
 .lead {
