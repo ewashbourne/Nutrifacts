@@ -26,46 +26,47 @@
       <td><%= food['nf_sugars'] %> g</td> 
     </tr>
      <tr>
-      <th>Sodium:</th>
-      <td><%= food['nf_sodium'] %> mg</td> 
+      <th class="row-color">Sodium:</th>
+      <td class="row-color"><%= food['nf_sodium'] %> mg</td> 
     </tr>
      <tr>
       <th>Cholesterol:</th>
       <td><%= food['nf_cholesterol'] %> mg</td> 
     </tr>
      <tr>
-      <th>Protein:</th>
-      <td><%= food['nf_protein'] %> g</td> 
+      <th class="row-color">Protein:</th>
+      <td class="row-color"><%= food['nf_protein'] %> g</td> 
     </tr>
      <tr>
       <th>Saturated Fat:</th>
       <td><%= food['nf_saturated_fat'] %> g</td> 
     </tr>
      <tr>
-      <th>Fiber:</th>
-      <td><%= food['nf_dietary_fiber'] %> g</td> 
+      <th class="row-color">Fiber:</th>
+      <td class="row-color"><%= food['nf_dietary_fiber'] %> g</td> 
     </tr>
      <tr>
       <th>Vitamin A:</th>
       <td><%= food['nf_vitamin_a_dv'] %>%</td> 
     </tr>
      <tr>
-      <th>Vitamin C:</th>
-      <td><%= food['nf_vitamin_c_dv'] %>%</td> 
+      <th class="row-color">Vitamin C:</th>
+      <td class="row-color"><%= food['nf_vitamin_c_dv'] %>%</td> 
     </tr>
      <tr>
       <th>Calcium:</th>
       <td><%= food['nf_calcium_dv'] %>%</td> 
     </tr>
      <tr>
-      <th>Iron:</th>
-      <td><%= food['nf_iron_dv'] %>%</td> 
+      <th class="row-color">Iron:</th>
+      <td class="row-color"><%= food['nf_iron_dv'] %>%</td> 
     </tr>
      <tr>
       <th>Potassium:</th>
       <td><%= food['nf_potassium'] %> g</td> 
     </tr>
     </table>
+    
 
     <%= form_for :food_fact, url: food_facts_path do |f| %>
     <%= f.hidden_field :brand_name,     value: food['brand_name'] %>

@@ -28,6 +28,50 @@
               <th class="row-color">Total Fat:</th>
               <td class="row-color"><%= fact.nf_total_fat %> g</td>
             </tr>
+            <tr>
+            <th>Sugar:</th>
+            <td><%= fact.nf_sugars %> g</td> 
+          </tr>
+           <tr>
+            <th class="row-color">Sodium:</th>
+            <td class="row-color"><%= fact.nf_sodium %> mg</td> 
+          </tr>
+           <tr>
+            <th>Cholesterol:</th>
+            <td><%= fact.nf_cholesterol %> mg</td> 
+          </tr>
+           <tr>
+            <th class="row-color">Protein:</th>
+            <td class="row-color"><%= fact.nf_protein %> g</td> 
+          </tr>
+           <tr>
+            <th>Saturated Fat:</th>
+            <td><%= fact.nf_saturated_fat %> g</td> 
+          </tr>
+           <tr>
+            <th class="row-color">Fiber:</th>
+            <td class="row-color"><%= fact.nf_dietary_fiber %> g</td> 
+          </tr>
+           <tr>
+            <th>Vitamin A:</th>
+            <td><%= fact.nf_vitamin_a_dv %>%</td> 
+          </tr>
+           <tr>
+            <th class="row-color">Vitamin C:</th>
+            <td class="row-color"><%= fact.nf_vitamin_c_dv %>%</td> 
+          </tr>
+           <tr>
+            <th>Calcium:</th>
+            <td><%= fact.nf_calcium_dv %>%</td> 
+          </tr>
+           <tr>
+            <th class="row-color">Iron:</th>
+            <td class="row-color"><%= fact.nf_iron_dv %>%</td> 
+          </tr>
+           <tr>
+            <th>Potassium:</th>
+            <td><%= fact.nf_potassium %> g</td> 
+          </tr>
           </table>
            <div class="delete-button">
             <%= link_to "Delete", food_facts_path(id: fact.id), method: :delete, data: { confirm: 'Are you sure?' } %>
